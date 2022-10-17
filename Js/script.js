@@ -2,6 +2,11 @@
 var generateBtn = document.querySelector("#generate");
 
 
+function randomInt(min, max){
+return Math.floor(math.random(max-min)+ min)
+
+}
+
 function generatePassword() {
 
  var userInput = window.prompt("How long should your password be?")
@@ -30,8 +35,8 @@ function generatePassword() {
  var upercaseList =["A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
  var charactersList = []
+  console.log(charactersList)
  
- }
 
  if (userWantsNumbers === true) {
    charactersList.push(numberList)
@@ -49,7 +54,13 @@ function generatePassword() {
   charactersList.push(upercaseList)
  }
 
- var generatedPassword = ""
+var generatePassword = ""
+
+for (var i = 0; i < userInput; i++) {
+  var randomCharacter = charactersList[randomInt(0, charactersList.length -1)]
+}
+
+}
 
 
 
