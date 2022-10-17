@@ -1,7 +1,8 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
- function generatePassword(){
+
+function generatePassword() {
 
  var userInput = window.prompt("How long should your password be?")
 
@@ -29,26 +30,29 @@ var generateBtn = document.querySelector("#generate");
  var upercaseList =["A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
  var charactersList = []
- console.log(charactersList)
+ 
  }
 
- if(userWantsNumbers === true) {
-  charactersList.push(numberList)
- }
+ if (userWantsNumbers === true) {
+   charactersList.push(numberList)
+  }
 
- if (userWantsSymbols === true){
-  charactersList.push(symbolList)
- }
+ if  (userWantsSymbols === true) {
+   charactersList.push(symbolList)
+  }
 
-  if (userWantsLowercase === true){
-  charactersList.push(lowercaseList)
-}
+  if  (userWantsLowercase === true) {
+   charactersList.push(lowercaseList)
+  }
 
-if (userWantsUppercase === true){
+ if (userWantsUppercase === true) {
   charactersList.push(upercaseList)
+ }
+
+ var generatedPassword = ""
 
 
-}
+
 
 // Write password to the #password input
 function writePassword() {
