@@ -1,6 +1,14 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+ function generatePassword(){
+
+ var userInput = window.prompt("How long should your password be?")
+
+ }
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
